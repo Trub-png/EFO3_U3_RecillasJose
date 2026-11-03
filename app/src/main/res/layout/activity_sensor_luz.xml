@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvTituloSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividad 7. Sensor de luz"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tvValorLuz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esperando lectura del sensor..."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uso de setBackgroundColor y setTextColor"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:alpha="0.7"/>
+
+</LinearLayout>

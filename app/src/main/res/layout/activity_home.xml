@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101818"
+    android:padding="25dp"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#101818">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSensorLuz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Actividad 7: Sensor de Luz"
+                android:backgroundTint="#333333"
+                android:textColor="@color/white"/>
+
+            <!-- TEXTO PARA SABER EL ESTADO DE CARGA DEL API -->
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Cargando"
+                android:textSize="15sp"/>
+
+
+            <!-- TÍTULO DEL GÉNERO / INICIO DE SECCION -->
+
+            <TextView
+                android:id="@+id/tvGeneroIndie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:text="Indie"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <!-- SCROLLVIEW DEL GÉNERO -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clipToPadding="false"
+                android:fillViewport="false"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:scrollbars="none">
+
+                <!-- CONTENEDOR DEL GENERO -->
+                <LinearLayout
+                    android:id="@+id/contenedorIndie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+
+            </HorizontalScrollView>
+
+
+            <!-- TÍTULO DEL GÉNERO / INICIO DE SECCION -->
+
+            <TextView
+                android:id="@+id/tvGeneroRock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:text="Rock"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <!-- SCROLLVIEW DEL GÉNERO -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clipToPadding="false"
+                android:fillViewport="false"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:scrollbars="none">
+
+                <!-- CONTENEDOR DEL GENERO -->
+                <LinearLayout
+                    android:id="@+id/contenedorRock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+
+            </HorizontalScrollView>
+
+
+            <!-- TÍTULO DEL GÉNERO / INICIO DE SECCION -->
+
+            <TextView
+                android:id="@+id/tvGeneroTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:text="Twenty One Pilot"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <!-- SCROLLVIEW DEL GÉNERO -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clipToPadding="false"
+                android:fillViewport="false"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:scrollbars="none">
+
+                <!-- CONTENEDOR DEL GENERO -->
+                <LinearLayout
+                    android:id="@+id/contenedorTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
